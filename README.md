@@ -9,7 +9,7 @@ Este proyecto implementa un sistema de **control en lazo cerrado** para un balan
 **Características principales:**
 - ✅ Control PID con **anti-windup** para evitar saturación del integrador
 - ✅ 4 modos de operación: rampa, 100% fijo, on/off, y control PID
-- ✅ Interface serial interactivo (115200 baud)
+- ✅ Interface serial interactivo (1200 baud)
 - ✅ Pantalla TFT para visualización del menú
 - ✅ Telemetría en tiempo real (ángulo, error, PWM)
 - ✅ Medición de tiempo de respuesta (0° → max)
@@ -25,7 +25,7 @@ Este proyecto implementa un sistema de **control en lazo cerrado** para un balan
 ### Periféricos
 | Componente | GPIO | Función |
 |-----------|------|---------|
-| Sensor de ángulo (ADC) | GPIO 15 | Lectura analógica del ángulo |
+| Sensor de ángulo (ADC) | GPIO 36 | Lectura analógica del ángulo |
 | Motor PWM | GPIO 25 | Control del motor DC |
 | LED auxiliar | GPIO 4 | Indicador de estado |
 
@@ -183,7 +183,7 @@ pio device monitor -b 115200 > datos.log
 ## 📐 Esquema Simplificado
 
 ```
-    GPIO15 (ADC)
+     (ADC)
         ↓
     [Potenciómetro/Sensor]
         ↓

@@ -9,7 +9,7 @@ Este proyecto implementa un sistema de **control en lazo cerrado** para un balan
 **Características principales:**
 - ✅ Control PID con **anti-windup** para evitar saturación del integrador
 - ✅ 4 modos de operación: rampa, 100% fijo, on/off, y control PID
-- ✅ Interface serial interactivo (1200 baud)
+- ✅ Interface serial interactivo (115200 baud)
 - ✅ Pantalla TFT para visualización del menú
 - ✅ Telemetría en tiempo real (ángulo, error, PWM)
 - ✅ Medición de tiempo de respuesta (0° → max)
